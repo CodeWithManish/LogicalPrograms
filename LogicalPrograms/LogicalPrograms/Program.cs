@@ -10,7 +10,7 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 1. to print Fabonacci Series \nEnter 2. to print Perfect Number \n");
+            Console.WriteLine("Enter 1. to print Fabonacci Series \nEnter 2. to print Perfect Number \nEnter 3.to print Prime Number \n");
 
             bool flag = true;
             while (flag)
@@ -24,19 +24,22 @@ namespace LogicalPrograms
                         fs.Series();
                         break;
 
-                        case 2:
+                    case 2:
                         PerfectNumber number = new PerfectNumber();
                         number.Perfect();
                         break;
 
+                    case 3:
+                        PrimeNumber prime = new PrimeNumber();
+                        prime.Prime();
+                        break;
 
-                   
-                   
 
-                    
-                      
 
-                  
+
+
+
+
                 }
             }
 
