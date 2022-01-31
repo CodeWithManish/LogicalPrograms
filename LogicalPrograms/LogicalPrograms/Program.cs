@@ -10,7 +10,7 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 1. to print Fabonacci Series \n");
+            Console.WriteLine("Enter 1. to print Fabonacci Series \nEnter 2. to print Perfect Number \n");
 
             bool flag = true;
             while (flag)
@@ -22,6 +22,11 @@ namespace LogicalPrograms
                     case 1:
                         FibonacciSeries fs = new FibonacciSeries();
                         fs.Series();
+                        break;
+
+                        case 2:
+                        PerfectNumber number = new PerfectNumber();
+                        number.Perfect();
                         break;
 
 
